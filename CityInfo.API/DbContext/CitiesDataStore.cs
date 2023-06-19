@@ -1,14 +1,14 @@
 ﻿using CityInfo.API.Models;
 
-namespace CityInfo.API
+namespace CityInfo.API.DbContext
 {
-    public class CitiesDataStore
+    public class CitiesDataStore : ICitiesDataStore
     {
         public List<CityDto> Cities { get; set; }
         public static CitiesDataStore Current { get; } = new CitiesDataStore();
         public CitiesDataStore()
         {
-            Cities= new List<CityDto>()
+            Cities = new List<CityDto>()
             {
                 new CityDto()
                 {
