@@ -131,7 +131,7 @@ namespace CityInfo.API.Controllers
                 return NotFound();
             }
 
-            currentPointOfInterest.Name = pointOfInterest.Name;
+            currentPointOfInterest.Name = pointOfInterest.Name ?? String.Empty;
             currentPointOfInterest.Description = pointOfInterest.Description;
 
             return NoContent();
