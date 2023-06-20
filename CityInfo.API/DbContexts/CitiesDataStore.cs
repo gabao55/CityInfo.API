@@ -1,6 +1,6 @@
 ﻿using CityInfo.API.Models;
 
-namespace CityInfo.API.DbContext
+namespace CityInfo.API.DbContexts
 {
     public class CitiesDataStore : ICitiesDataStore
     {
